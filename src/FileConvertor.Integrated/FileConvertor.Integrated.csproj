@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FileConvertor.Dtos\FileConvertor.Dtos.csproj" />
+    <ProjectReference Include="..\FileConvertor.ViewModels\FileConvertor.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>
