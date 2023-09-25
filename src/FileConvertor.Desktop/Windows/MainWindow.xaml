@@ -70,7 +70,7 @@
 
                     <Button
                         Click="pdfBtn_Click"
-                        x:Name="LoinBtn"
+                        x:Name="exelBtn"
                         Margin="0 50 0 0"
                         Height="40"
                         Width="150"
@@ -80,7 +80,7 @@
                     </Button>
                     <Button
                         Click="pdfBtn_Click"
-                        x:Name="Btn"
+                        x:Name="docBtn"
                         Margin="0 50 0 0"
                         Height="40"
                         Width="150"
