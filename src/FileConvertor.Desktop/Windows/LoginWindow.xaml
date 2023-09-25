@@ -5,22 +5,151 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileConvertor.Desktop.Windows"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="450" Width="800">
+        Title="LoginWindow" Height="600" Width="450">
     <Grid>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+        <StackPanel x:Name="stackPanel"
+                    Grid.Row="1"
+                    Margin="10 10 10 100"
+                    Visibility="Visible"
+                    Orientation="Vertical">
+            
+            <Label Content="LOGIN"
+                   FontSize="23"
+                   Margin="0 10"
+                   HorizontalAlignment="Center"/>
+
+            <Label      Margin="0 10 0 0"    
+                        FontSize="20"
+                        Content="Telefon raqami"
+                        VerticalAlignment="Center"
+                        Style="{DynamicResource NameLabel}"/>
+
+            <Border
+                        CornerRadius="5"
+                        Background="#F2F2F2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="0.5"/>
+                    </Grid.RowDefinitions>
+                    <Grid
+                                Grid.Row="0"
+                                Margin="5 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="55"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label
+                                    x:Name="lbCodePhone"
+                                    Grid.Column="0"
+                                    Content="+998"
+                                    FontSize="18"
+                                    Margin="0 5 0 0"
+                                    Foreground="Black"
+                                    VerticalAlignment="Center"
+                                    Style="{DynamicResource NameLabel}"/>
+                        <TextBox
+                                    x:Name="textboxPhone"
+                                    MaxLength="9"
+                                    Grid.Column="1"
+                                    FontSize="18"
+                                    Text="917727005"
+                                    BorderThickness="0"
+                                    VerticalAlignment="Center"
+                                    FontWeight="SemiBold"
+                                    Foreground="Black"
+                                    Background="Transparent">
+                        </TextBox>
+                    </Grid>
+                    <Border
+                                Grid.Row="1"
+                                x:Name="Phoneborder"
+                                Margin="5 0"
+                                Background="Black">
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Label
+                        FontSize="20"
+                        Content="Parol"
+                        Margin="0 20 0 0"
+                        VerticalAlignment="Center"
+                        Foreground="Black"
+                        Style="{DynamicResource NameLabel}"/>
+
+            <Border
+                        CornerRadius="5"
+                        Background="#F2F2F2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="0.5"/>
+                    </Grid.RowDefinitions>
+                    <Grid
+                                Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="40"/>
+                        </Grid.ColumnDefinitions>
+                        <PasswordBox
+                                    x:Name="textboxParol"
+                                    Grid.Column="0"
+                                    Margin="10 0"
+                                    FontSize="18"
+                                    BorderThickness="0"
+                                    VerticalAlignment="Center"
+                                    FontWeight="SemiBold"
+                                    Foreground="Black"
+                                    Background="Transparent">
+                        </PasswordBox>
+                        <TextBox 
+                                    x:Name="textboxParolText"
+                                    Grid.Column="0"
+                                    Visibility="Collapsed"
+                                    Margin="10 0"
+                                    FontSize="18"
+                                    BorderThickness="0"
+                                    VerticalAlignment="Center"
+                                    FontWeight="SemiBold"
+                                    Foreground="Black"
+                                    Background="Transparent">
+                        </TextBox>
+                        <Border Grid.Column="1">
+                            <Button x:Name="showPassword"
+                                    Style="{DynamicResource showPasswordButton}" Height="25" VerticalAlignment="Top">
+
+                            </Button>
+                        </Border>
+                    </Grid>
+                    <Border
+                                Grid.Row="1"
+                                Margin="5 0"
+                                x:Name="Parolborder"
+                                Background="Black">
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Label
+                        Name="lblForgotPassword"
+                        Margin="0 10 140 10"
+                        FontSize="14"
+                        FontWeight="SemiBold"
+                        VerticalAlignment="Center"
+                        Content="Parolni unutdingizmi ?"/>
+
+            <Button
+                        x:Name="LoginBtn"
+                        Margin="0 50 0 0"
+                        Height="35"
+                        Width="300"
+                        FontSize="18"
+                        Content="Kabinetga kirish"
+                        Style="{DynamicResource LoginButton}">
+
+            </Button>
+        </StackPanel>
     </Grid>
 </Window>
