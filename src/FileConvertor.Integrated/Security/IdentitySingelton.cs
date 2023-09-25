@@ -5,9 +5,6 @@ public class IdentitySingelton
     private static IdentitySingelton _identitySingelton;
 
     public string Token { get; set; }
-    public long AdminId { get; set; }
-    public long HospitalBranchId { get; set; }
-    public string PhoneNumber { get; set; }
     public string Name { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
