@@ -5,9 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileConvertor.Desktop"
         mc:Ignorable="d"
+        WindowStyle="ToolWindow"
+        MinHeight="450"
+        MinWidth="600"
+        MaxHeight="450"
+        MaxWidth="600"
         WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="450" Width="800">
+        Title="File Convertor">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border 
+            Grid.Column="0"
+            Height="50"
+            Width="200"
+            Background="red"
+            CornerRadius="10"
+            >
+            <Button 
+                BorderThickness="0"
+                BorderBrush="Transparent"
+                FontWeight="SemiBold"
+                FontSize="20"
+                Content="Faylni tanlang"
+                Background="Transparent">
+                
+            </Button>
+        </Border>
+
+        <StackPanel>
+            
+        </StackPanel>
 
     </Grid>
 </Window>
