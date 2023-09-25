@@ -36,25 +36,10 @@
                     <Grid
                                 Grid.Row="0"
                                 Margin="5 0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="55"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Label
-                                    x:Name="lbCodePhone"
-                                    Grid.Column="0"
-                                    Content="+998"
-                                    FontSize="18"
-                                    Margin="0 5 0 0"
-                                    Foreground="Black"
-                                    VerticalAlignment="Center"
-                                    Style="{DynamicResource NameLabel}"/>
                         <TextBox
-                                    x:Name="textboxPhone"
-                                    MaxLength="9"
+                                    x:Name="textboxEmail"
                                     Grid.Column="1"
                                     FontSize="18"
-                                    Text="917727005"
                                     BorderThickness="0"
                                     VerticalAlignment="Center"
                                     FontWeight="SemiBold"
@@ -118,6 +103,7 @@
                         </TextBox>
                         <Border Grid.Column="1">
                             <Button x:Name="showPassword"
+                                    Click="showPassword_Click"
                                     Style="{DynamicResource showPasswordButton}" Height="25" VerticalAlignment="Top">
 
                             </Button>
@@ -147,6 +133,7 @@
                         Width="300"
                         FontSize="18"
                         Content="Kabinetga kirish"
+                        Click="LoginBtn_Click"
                         Style="{DynamicResource LoginButton}">
 
             </Button>
