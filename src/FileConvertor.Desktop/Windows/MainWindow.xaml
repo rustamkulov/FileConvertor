@@ -16,13 +16,15 @@
         <Border>
             <Border.Background>
                 <ImageBrush
+                    Stretch="UniformToFill"
                     ImageSource="/Assets/Images/default.jpg" >
+                    
                 </ImageBrush>
             </Border.Background>
         </Border>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="60"/>
+                <RowDefinition Height="100"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -30,7 +32,7 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Bottom"
                 FontWeight="SemiBold"
-                FontSize="28"
+                FontSize="35"
                 Content="Dokument Konvertor"/>
 
             <Grid 
@@ -42,18 +44,19 @@
                 </Grid.ColumnDefinitions>
 
                 <Button
-                    Margin="0 0 0 50"
+                    Margin="0 0 0 100"
+                    Click="ChangeBtn_Click"
                     x:Name="ChangeBtn"
-                    Height="40"
-                    Width="150"
-                    FontSize="18"
+                    Height="50"
+                    Width="200"
+                    FontSize="20"
                     Content="Faylni tanlang"
                     Background="#207EAA"
                     Style="{DynamicResource LoginButton}">
                 </Button>
 
                 <StackPanel
-                    Margin="0 70"
+                    Margin="0 10"
                     Orientation="Vertical"
                     Grid.Column="1" 
                                 >
@@ -61,9 +64,9 @@
                         Click="pdfBtn_Click"
                         x:Name="pdfBtn"
                         Margin="0 50 0 0"
-                        Height="40"
-                        Width="150"
-                        FontSize="18"
+                        Height="50"
+                        Width="200"
+                        FontSize="20"
                         Content="PDF"
                         Style="{DynamicResource LoginButton}">
                     </Button>
@@ -72,19 +75,19 @@
                         Click="pdfBtn_Click"
                         x:Name="exelBtn"
                         Margin="0 50 0 0"
-                        Height="40"
-                        Width="150"
-                        FontSize="18"
-                        Content="EXEL"
+                        Height="50"
+                        Width="200"
+                        FontSize="20"
+                        Content="EXCEL"
                         Style="{DynamicResource LoginButton}">
                     </Button>
                     <Button
                         Click="pdfBtn_Click"
                         x:Name="docBtn"
                         Margin="0 50 0 0"
-                        Height="40"
-                        Width="150"
-                        FontSize="18"
+                        Height="50"
+                        Width="200"
+                        FontSize="20"
                         Content="Document"
                         Style="{DynamicResource LoginButton}">
                     </Button>
